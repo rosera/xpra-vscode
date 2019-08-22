@@ -76,4 +76,4 @@ EXPOSE 10000
 USER user
 
 # CMD to execute
-CMD xpra start --bind-tcp=0.0.0.0:10000 --html=on --exit-with-children --daemon=no --xvfb="/usr/bin/Xvfb +extension  Composite -screen 0 1920x1080x24+32 -nolisten tcp -noreset" --pulseaudio=no --notifications=no --bell=no --start-child=vscode
+CMD xpra start --bind-tcp=0.0.0.0:8080 --html=on --exit-with-children --daemon=no --xvfb="/usr/bin/Xvfb +extension  Composite -screen 0 1920x1080x24+32 -nolisten tcp -noreset" --pulseaudio=no --notifications=no --bell=no --start-child=vscode
